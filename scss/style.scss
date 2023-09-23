@@ -7,7 +7,10 @@
 
     background-image: url(../slike/background.jpg);
     height: 70vh;
-    padding: 5%;
+    padding: 3%;
+    align-items: center ;
+    width: 100%;
+    
     
 
     .mainNavigation{
@@ -16,25 +19,39 @@
         height: 3em;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: space-between;
+        margin: 0 auto;
+        resize: none;
     
 
         .megarent{
             margin-left: 2em;
-            margin-top: 1em;
-            p{
-            font-weight: bold;
-            color: rgb(197, 103, 26);
+            margin-top: 0.5em;
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            .orange{
+                color: $main_red;
+                font-weight: bolder;
+                font-family: $logo_font;
+                font-size: x-large;
+            }
+            .gray{
+                color: $main_text_color;
+                font-weight: bolder;
+                font-family: $logo_font;
+                font-size: x-large;
             }
         }
 
         nav{
             float: right;
+            margin-top: 0.5em;
             ul{
                 display: flex;
                 flex-direction: row;
                 list-style: none;
+                height: 100%;
                 
 
                 li{
@@ -49,18 +66,37 @@
     }
 
         .welcome{
+            height: 70%;
+            width: 50%;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             align-items: center;
+            margin: 0 auto;
+            margin-top: 10%;
+
+            h1,h4{
+                color: white;
+                }
+        
+            h1{
+                 border-bottom: 1px solid red;
+            }
+           
         }
 }
 
 .selection{
+    padding: 5%;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: $grey_background;
+
+    .izbor{
+        margin-bottom: 25px;
+    }
 
     
 
@@ -77,12 +113,23 @@
             img{
                 width: 90%;
             }
+            a{
+                background-color: $main_red;
+                text-decoration: none;
+                color: white;
+                width: 150px;
+                padding: 1%;
+                text-align: center;
+                margin-top: 5px;
+            }
         }
         
     }
 }
 
 .pricing{
+    height: 60vh;
+    padding: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,16 +139,27 @@
         margin-top: 5em;
         border-collapse: collapse;
         height: 10em;
+        text-align: center;
            th{
             background-color: red;
-            border: none;
-           }
+            color: white;
+            }
 
-           tr{
-            border-bottom: 1px solid black;
-            border-top: 1px solid black;
-            border: none;
-           }
+            tr{
+                border-bottom: 1pt solid black;
+            }
+
+            .bez{
+                border-bottom: none;
+            }
+
+           .first{
+            background-color: $red_dark;
+        }
+
+        .column{
+            background-color: $grey_background;
+        }
            
      }
 
@@ -114,6 +172,45 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    background-color: black;
+    padding: 5%;
+
+
+.gornji{
+    display: flex;
+    flex-direction: row;
+    font-size: x-large;
+    .orange{
+        color: $main_red;
+        font-family: $logo_font;
+    }
+    .gray{
+        color: $main_text_color;
+        font-family: $logo_font;
+    }
+}
+
+    .srednji{
+        background-color: red;
+        height: 1px;
+        width: 100%;
+        margin: 0 auto;
+        }
+
+    .donji{
+        padding: 2%;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        p{
+            color: white;
+            font-style: italic;
+        }
+        
+    }
+
+
 }
 
 
