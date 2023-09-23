@@ -21,7 +21,7 @@
         flex-direction: row;
         justify-content: space-between;
         margin: 0 auto;
-        resize: none;
+        // resize: none;
     
 
         .megarent{
@@ -134,6 +134,10 @@
     flex-direction: column;
     align-items: center;
 
+    .dugme{
+        visibility: hidden;
+    }
+
      .pricingTable{
         width: 50%;
         margin-top: 5em;
@@ -208,10 +212,142 @@
             font-style: italic;
         }
         
+        
+        
     }
 
 
 }
+
+@media screen and (max-width: 1350px) {
+
+.intro{
+    .mainNavigation{
+        width: 95%;
+    }
+}
+
+.selection{
+    height: auto;
+    .kola{
+        .prva{
+            padding: 30px;
+            width: 40%;
+            margin-left: 7%;
+        }
+    }
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    .donji{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+}
+
+@media screen and (max-width: 600px) {
+.intro{
+    padding: 0;
+    background-image: none;
+    background-color: black;
+    height: 90vh;
+    .mainNavigation {
+		padding: 0;
+		height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+
+		.megarent {
+			width: 100%;
+		}
+        
+           
+        
+		ul {
+			width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            
+			li {
+				width: 100%;
+                text-align: center;
+				padding: 0.5em;
+			}
+		}
+    }
+	
+    .welcome{
+        width: 100%;
+
+    
+    }
+}
+
+
+
+.selection{
+    height: auto;
+    .kola{
+        .prva{
+            width: 60%;
+            margin-left: 15%;
+            a{
+                width: 80%;
+                height: 40px;
+                text-align: center;
+                margin-top: 15px;
+                padding-top: 6%;
+                font-size: small;
+                
+
+            }
+        }
+    }
+}
+
+.pricing{
+    padding: 15%;
+    .pricingTable{
+        display: none;
+    }
+    .dugme{
+        visibility: visible;
+        background-color: $main_red;
+        color: white;
+        text-decoration: none;
+        width: 50%;
+        height: 40px;
+        text-align: center;
+        margin-top: 15px;
+        padding-top: 4%;
+        font-size: small;
+
+    }
+}
+
+.contact{
+    .donji{
+        .mapa{
+        
+            margin: 0 auto;
+        }
+    }
+
+}
+
+}
+
 
 
 
